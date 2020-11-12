@@ -1,9 +1,19 @@
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.TreeSet;
 
 public class main {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	class Point {
+		int x, y;
 
+		public Point(int xx, int yy) {
+			x = xx;
+			y = yy;
+		}
+
+		double distance(Point b) {
+			return Math.sqrt((x - b.x) * (x - b.x) + (y - b.y) * (y - b.y));
+		}
 	}
-
 }
